@@ -1,0 +1,15 @@
+{
+  "name": "webaudio5",
+  "version": "0.1.0",
+  "description": "Web audio experiments with simple tone control",
+  "main": "./js/index.js",
+  "scripts": {
+    "test": "jest test"
+  },
+  "author": "Tony Thomas",
+  "license": "MIT",
+  "dependencies": {
+    "parcel": "^1.12.4",
+    "tone": "^13.8.25"
+  }
+}
