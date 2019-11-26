@@ -12,6 +12,20 @@
   <div class="row">
     <div class="col-xs-12">
       <h1>Tone.js Experiments</h1>
+
+      <label for="freqency-slider">Volume</label>
+      <input id="freqency-slider"
+              class="input-range volume"
+              orient="vertical"
+              type="range"
+              step="1"
+              value="262"
+              min="16"
+              max="6272"
+              data-value-elem="freqency-slider-value"
+              data-control="frequency"
+              width="100%">
+      <p class="range-value" id="freqency-slider-value" data-slider="freqency-slider"></p>
   </div>
   <script src="./js/index.js"></script>
 </body>
