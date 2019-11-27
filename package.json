@@ -4,7 +4,8 @@
   "description": "Web audio experiments with simple tone control",
   "main": "./js/index.js",
   "scripts": {
-    "test": "jest test"
+    "test": "jest test",
+    "build": "parcel build index.html"
   },
   "author": "Tony Thomas",
   "license": "MIT",
