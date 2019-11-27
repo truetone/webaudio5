@@ -1,23 +1,15 @@
-const oscillator = require("Tone").Oscillator;
+const oscillator = require("./oscillator");
 const slider = require('./slider');
 
 class App {
   constructor() {
-    this.oscillator = new oscillator().toMaster();
-    this.frequencySlider = new slider(this.frequencySliderElem).init();
-    this.frequencySliderElem.addEventListener("input", (event) => {
-      this.onFrequencyInput(event);
-    });
+    this.oscillator = new oscillator(".input-range.frequency").oscillator;
     this.startButtonElem.addEventListener("click", (event) => {
       this.start();
     });
     this.stopButtonElem.addEventListener("click", (event) => {
       this.stop();
     });
-  }
-
-  onFrequencyInput(event) {
-    this.oscillator.frequency.value = this.frequencySliderElem.value;
   }
 
   start() {
@@ -28,10 +20,6 @@ class App {
   stop() {
     console.log("stop")
     this.oscillator.stop();
-  }
-
-  get frequencySliderElem() {
-    return document.querySelector(".input-range.frequency");
   }
 
   get startButtonElem() {
