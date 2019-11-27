@@ -1,5 +1,4 @@
 const oscillator = require("Tone").Oscillator;
-const transport = require("Tone").Transport;
 const slider = require('./slider');
 
 class App {
