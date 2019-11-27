@@ -1,4 +1,4 @@
-const oscillator = require("Tone").Oscillator;
+const oscillator = require("tone").Oscillator;
 const slider = require('./slider');
 
 class Oscillator {
