@@ -1,25 +1,39 @@
-const synth = require("Tone").MonoSynth;
+const oscillator = require("Tone").Oscillator;
 const transport = require("Tone").Transport;
 const slider = require('./slider');
 
 class App {
   constructor() {
-    this.synth = new synth();
+    this.oscillator = new oscillator().toMaster();
     this.frequencySlider = new slider(this.frequencySliderElem).init();
+    this.startButtonElem.addEventListener("click", (event) => {
+      this.start();
+    });
+    this.stopButtonElem.addEventListener("click", (event) => {
+      this.stop();
+    });
   }
 
   start() {
-    transport.start();
-    this.synth.triggerAttack();
+    console.log(this.oscillator)
+    this.oscillator.start();
   }
 
   stop() {
-    transport.stop();
-    this.synth.triggerRelease();
+    console.log("stop")
+    this.oscillator.stop();
   }
 
   get frequencySliderElem() {
     return document.querySelector(".input-range.frequency");
+  }
+
+  get startButtonElem() {
+    return document.querySelector("#start-button");
+  }
+
+  get stopButtonElem() {
+    return document.querySelector("#stop-button");
   }
 }
 
