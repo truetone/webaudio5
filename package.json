@@ -5,7 +5,7 @@
   "main": "./js/index.js",
   "scripts": {
     "test": "jest test",
-    "build": "parcel build index.html"
+    "deploy": "parcel build index.html"
   },
   "author": "Tony Thomas",
   "license": "MIT",
