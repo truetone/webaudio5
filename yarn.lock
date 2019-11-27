@@ -5021,6 +5021,11 @@ tr46@^1.0.1:
   dependencies:
     punycode "^2.1.0"
 
+"truetone-color-logger@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/truetone-color-logger/-/truetone-color-logger-0.1.0.tgz#ceca145fd2057a1856eaa04ac5db310a2b27d06c"
+  integrity sha512-zPaY3djB4922hyUa+AfzhQbCeli9aEUmTGjkc7AKEtZ74GrxaVzAJhleBBb3ip+W6BzZrJCbCvpe6rOlg2Xz3w==
+
 tty-browserify@0.0.0:
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/tty-browserify/-/tty-browserify-0.0.0.tgz#a157ba402da24e9bf957f9aa69d524eed42901a6"

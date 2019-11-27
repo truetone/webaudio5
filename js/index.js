@@ -1,8 +1,10 @@
 const oscillator = require("./oscillator");
 const slider = require('./slider');
+const logger = require("truetone-color-logger");
 
 class App {
   constructor() {
+    this.logger = new logger(App.name);
     this.oscillator = new oscillator(".input-range.frequency").oscillator;
     this.startButtonElem.addEventListener("click", (event) => {
       this.start();
@@ -13,12 +15,12 @@ class App {
   }
 
   start() {
-    console.log(this.oscillator)
+    this.logger.log(this.oscillator)
     this.oscillator.start();
   }
 
   stop() {
-    console.log("stop")
+    this.logger.log("stop")
     this.oscillator.stop();
   }
 
