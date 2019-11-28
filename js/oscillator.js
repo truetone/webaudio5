@@ -1,5 +1,5 @@
 const oscillator = require("tone").Oscillator;
-const slider = require('./slider');
+const slider = require('truetone-slider');
 
 class Oscillator {
   constructor(sliderSelector) {

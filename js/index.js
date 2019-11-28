@@ -1,5 +1,4 @@
 const oscillator = require("./oscillator");
-const slider = require('./slider');
 const logger = require("truetone-color-logger");
 
 class App {

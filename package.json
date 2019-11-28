@@ -12,6 +12,7 @@
   "dependencies": {
     "parcel": "^1.12.4",
     "tone": "^13.8.25",
-    "truetone-color-logger": "^0.1.0"
+    "truetone-color-logger": "^0.1.0",
+    "truetone-slider": "^0.1.0"
   }
 }

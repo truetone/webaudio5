@@ -5026,6 +5026,11 @@ tr46@^1.0.1:
   resolved "https://registry.yarnpkg.com/truetone-color-logger/-/truetone-color-logger-0.1.0.tgz#ceca145fd2057a1856eaa04ac5db310a2b27d06c"
   integrity sha512-zPaY3djB4922hyUa+AfzhQbCeli9aEUmTGjkc7AKEtZ74GrxaVzAJhleBBb3ip+W6BzZrJCbCvpe6rOlg2Xz3w==
 
+"truetone-slider@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/truetone-slider/-/truetone-slider-0.1.0.tgz#06902d9677c5c2efe08daa8c525b3f865cee9b09"
+  integrity sha512-t6nkPvqjaJ7qz14/vVrV+sAa+GCMM6E53AVkKf1RaXRcdaXr6t91ffi0dx4P2GzAH5zX+Tdzwv+OpSKDfOjxnA==
+
 tty-browserify@0.0.0:
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/tty-browserify/-/tty-browserify-0.0.0.tgz#a157ba402da24e9bf957f9aa69d524eed42901a6"
