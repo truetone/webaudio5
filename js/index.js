@@ -4,7 +4,7 @@ const logger = require("truetone-color-logger");
 class App {
   constructor() {
     this.logger = new logger(App.name);
-    this.oscillator = new oscillator(".input-range.frequency").oscillator;
+    this.oscillator = oscillator.buildFromSelector(".input-range.frequency").oscillator;
     this.startButtonElem.addEventListener("click", (event) => {
       this.start();
     });
